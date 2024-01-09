@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  Apache:
+    ports:
+      - 80:80
+    volumes:
+      - ./htdocs:/usr/local/apache2/htdocs/
+      - ./conf:/usr/local/apache2/conf/
